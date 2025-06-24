@@ -1,17 +1,17 @@
-
 function Home() {
+
   return (
     <div className="
         flex 
-        justify-center
+        justify-center 
         bg-indigo-900
-        ">
+    ">
         <div className="
             container 
             grid 
             grid-cols-2
             text-white
-            ">
+        ">
             <div className="
                 flex
                 flex-col
@@ -44,10 +44,14 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div>
-                <img 
-                    src="https://i.imgur.com/VpwApCU.png" 
-                    alt="Imagem da Página Inicial"
+            <div className="
+                flex
+                justify-center
+
+            ">
+                <img
+                    src="https://i.imgur.com/VpwApCU.png"
+                    alt="Imagem da Página Home"
                     className="w-2/3"
                 />
             </div>
