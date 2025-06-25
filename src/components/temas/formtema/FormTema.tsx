@@ -39,7 +39,7 @@ function FormTema() {
                 alert("Você precisa estar logado!")
                 navigate("/")
             }
-    })
+    }, [token])
 
     useEffect(() => {
         if(id !== undefined) {
