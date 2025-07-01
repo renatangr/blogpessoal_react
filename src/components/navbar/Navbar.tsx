@@ -12,7 +12,7 @@ function Navbar() {
     function logout(){
         handleLogout()
         ToastAlerta("O usuário foi desconectado com sucesso!", "info")
-        navigate("/")
+        navigate("/login")
     }
 
     let component: ReactNode
@@ -35,8 +35,10 @@ function Navbar() {
                         <Link to='/cadastrartema' className='hover:underline'>
                             Cadastrar tema
                         </Link>
-                        Perfil
-                        <Link to="" onClick={logout} className="hover:underline">
+                        <Link to='/perfil' className='hover:underline'>
+                            Perfil
+                        </Link>
+                        <Link to="/login" onClick={logout} className="hover:underline">
                             Sair
                         </Link>
                     </div>
